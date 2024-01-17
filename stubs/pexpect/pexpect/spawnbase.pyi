@@ -36,9 +36,9 @@ class SpawnBase:
     child_fd: int
     timeout: Incomplete
     delimiter: Incomplete
-    logfile: _Logfile
-    logfile_read: _Logfile
-    logfile_send: _Logfile
+    logfile: _Logfile | None
+    logfile_read: _Logfile | None
+    logfile_send: _Logfile | None
     maxread: Incomplete
     searchwindowsize: Incomplete
     delaybeforesend: float | None
